@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic WebSite</title>
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+    <body>
+        <div class="logo">
+            <img src="./images/transflower_logo.jpg"
+                width="100"
+                height="100">
+            <h2>Transflower Learning Pvt. Ltd.</h2>
+        </div>
+        <hr>
+        <hr>
+
+        <div class="nav"> |
+            <a href="./index.html">Home</a> |
+            <a href="./aboutus.html">About Us</a> |
+            <a href="./contact.html">contact</a> |
+            <a href="./services.html">services</a> |
+        </div>
+        <hr>
+        <hr>
+        <div class="body">
+            <u><h1 style="margin-top: 20px;">Login</h1></u>
+        
+            <form method="post" action="/api/login">
+                <table>
+                    <tr>
+                       <td><p><b>Email Address:</b></p></td>
+                        <td> <input type="email" name="email" /></td>
+                    </tr>
+                    <tr>
+                        <td><p><b>Password:</b></p></td>
+                        <td> <input type="password" name="password" /></td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> <input class="button" type="submit" value="login" /></td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </body>
+</html>

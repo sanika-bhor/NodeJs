@@ -97,7 +97,7 @@ app.post("/api/login", (req, res) =>
         var people = JSON.parse(data.toString());
         var yourdata = people.find((member) => member.email === getData.email);
 
-        if (yourdata && yourdata.password && getData.password) 
+        if (yourdata && yourdata.password == getData.password) 
         {
             res.send("welcome " + yourdata.email);
         } 
