@@ -1,5 +1,8 @@
+// ejs module can download using npm install
 const ejs=require('ejs');
 
+// trying to send index.ejs file at appropriate http request
+// which is implementing hollywood rule{don't call me, i will call you}
 exports.home=(req,res)=>{
     ejs.renderFile("./views/index.ejs",{},{},(err,template)=>{
        if(err)
@@ -11,8 +14,9 @@ exports.home=(req,res)=>{
             res.end(template);
         }
     });
-}
+};
 
+// http request: /about
 exports.about = (req, res) => {
   ejs.renderFile("./views/about.ejs", {}, {}, (err, template) => {
     if (err) {
@@ -23,7 +27,7 @@ exports.about = (req, res) => {
   });
 };
 
-
+// http request: /contact
 exports.contactus = (req, res) => {
   ejs.renderFile("./views/contact.ejs", {}, {}, (err, template) => {
     if (err) {
@@ -34,6 +38,7 @@ exports.contactus = (req, res) => {
   });
 };
 
+// http request: /service
 exports.services = (req, res) => {
   ejs.renderFile("./views/service.ejs", {}, {}, (err, template) => {
     if (err) {

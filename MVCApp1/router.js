@@ -1,5 +1,6 @@
 const controller=require('./controller/controller');
 
+// routing api at server side
 module.exports=function(app){
     app.get('/',controller.home);
     app.get('/about',controller.about);
