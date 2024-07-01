@@ -12,6 +12,12 @@ Welcome to my Node.js repository! Here, you'll find a collection of projects and
 - **Asynchronous Programming**: Handling asynchronous operations using callbacks, promises, and async/await.
 - **Express.js**: Building robust web applications and APIs with this popular Node.js framework.
 - **Database Integration**: Connecting and interacting with databases like MongoDB and MySQL.
+- **Web Server Development**: Building and deploying web servers with Node.js.
+- **JWT Authentication**: Implementing secure authentication and authorization using JSON Web Tokens.
+- **File I/O**: Handling file operations such as reading, writing, and streaming data.
+- **MVC Architecture**: Structuring applications following the Model-View-Controller pattern for better organization and maintainability.
+- **State Management**: Managing application state efficiently in server-side applications.
+
 
 
 ---
