@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "productName": "nailPaint",
+        "price": 10
+    },
+    {
+        "id": "2",
+        "productName": "Ear Ring",
+        "price": 10
+    },
+    {
+        "id": "3",
+        "productName": "Necklace",
+        "price": 10
+    },
+    {
+        "id": "4",
+        "productName": "watch",
+        "price": 10
+    },
+    {
+        "id": "5",
+        "productName": "braclet",
+        "price": 10
+    }
+]
