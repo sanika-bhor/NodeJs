@@ -17,7 +17,13 @@ Welcome to my Node.js repository! Here, you'll find a collection of projects and
 - **File I/O**: Handling file operations such as reading, writing, and streaming data.
 - **MVC Architecture**: Structuring applications following the Model-View-Controller pattern for better organization and maintainability.
 - **State Management**: Managing application state efficiently in server-side applications.
+## Installation
 
+To get started with the "Android Development" project, follow these steps:
+
+1. Clone the repository:
+   ```bash
+    https://github.com/sanika-bhor/NodeJs.git
 
 
 ---
