@@ -1,0 +1,10 @@
+create database banking;
+use banking;
+create table employee(empid int not null auto_increment primary key, empname varchar(20) ,email varchar(30),city varchar(20));
+insert into employee (empname, email,city) values('sanika bhor','bhorsanika0239@gmail.com','pune');
+insert into employee (empname, email,city) values('sumit bhor','sumitbhor@gmail.com','pune');
+select * from employee;
+create table credentials(empid int not null auto_increment primary key,email varchar(30),password varchar(8));
+insert into credentials (email,password) values('bhorsanika0239@gmail.com','sanika');
+insert into credentials (email,password) values('sumitbhor@gmail.com','sumit');
+select * from credentials;
