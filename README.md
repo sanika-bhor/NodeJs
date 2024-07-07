@@ -17,6 +17,16 @@ Welcome to my Node.js repository! Here, you'll find a collection of projects and
 - **File I/O**: Handling file operations such as reading, writing, and streaming data.
 - **MVC Architecture**: Structuring applications following the Model-View-Controller pattern for better organization and maintainability.
 - **State Management**: Managing application state efficiently in server-side applications.
+- **Object-Oriented Programming (OOP)**: Implementing OOP principles like classes, objects, inheritance, encapsulation, and polymorphism in 
+      JavaScript.
+- **Error Handling**: Writing robust error handling and logging mechanisms to ensure application reliability.
+- **Frontend and Backend Integration**: Combining Node.js backend with frontend technologies like HTML, CSS, and JavaScript to build full-stack 
+      applications.
+- **RESTful APIs**: Designing and implementing REST APIs for seamless communication between frontend and backend.
+- **Templating Engines (EJS)**: Using EJS to dynamically generate HTML content on the server-side.
+- **Event-driven architecture**: Implementing event-driven architecture with EventEmitter to handle custom events and communication between 
+     modules.
+- **Middleware**: Using middleware functions in Express.js for handling requests, authentication, and more.
 ## Installation
 
 To get started with the "Android Development" project, follow these steps:
