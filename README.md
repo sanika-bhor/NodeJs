@@ -1,6 +1,3 @@
-
-
-```markdown
 # Hi, I'm Sanika 👋
 
 I'm currently learning Node.js, diving into its powerful features and capabilities to build efficient and scalable server-side applications. 
