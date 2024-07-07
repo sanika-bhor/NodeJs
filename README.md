@@ -76,5 +76,3 @@ To get started with the "Android Development" project, follow these steps:
 1. Clone the repository:
    ```bash
     https://github.com/sanika-bhor/NodeJs.git
-```
-
