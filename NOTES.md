@@ -9,7 +9,7 @@ Modules in Node.js are reusable pieces of code that can be imported and used in 
 - **Third-party Modules**: Modules created by the community and available via npm (Node Package Manager).
 
 ### Syntax:
-```bash
+```javascript
 var express = require("express");
 ```
 
@@ -18,7 +18,7 @@ var express = require("express");
 Exporting in Node.js means making functions or variables available for use in other files. This is done using the 'module.exports' or 'exports' object.
 
 ### Syntax:
-```bash
+```javascript
 exports.sayHello = function() {
     console.log("Hello from the handler module!");
 };
