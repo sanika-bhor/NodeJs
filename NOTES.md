@@ -29,7 +29,7 @@ exports.sayHello = function() {
 - Callbacks are used to handle asynchronous operations.
 - They ensure that code runs only after a certain task has completed, preventing blocking of other operations.
 
-  ### Syntax:
+### Syntax:
 ```javascript
 performTask((err, data) => {
     if (err) {
