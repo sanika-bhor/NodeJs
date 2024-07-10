@@ -23,3 +23,19 @@ exports.sayHello = function() {
     console.log("Hello from the handler module!");
 };
 ```
+
+## * Callback Functions:-
+- A callback function is a function passed into another function as an argument, which is then executed inside the outer function to complete some kind of routine or action.
+- Callbacks are used to handle asynchronous operations.
+- They ensure that code runs only after a certain task has completed, preventing blocking of other operations.
+
+  ### Syntax:
+```javascript
+performTask((err, data) => {
+    if (err) {
+        console.error("Error:", err);
+    } else {
+        console.log("Data:", data);
+    }
+});
+```
