@@ -44,3 +44,17 @@ performTask((err, data) => {
 - JSON (JavaScript Object Notation) is a lightweight data-interchange format.
 - It is easy for humans to read and write and easy for machines to parse and generate.
 - JSON is commonly used for transmitting data in web applications.
+
+### Example:
+```javascript
+{
+  "name": "Sanika",
+  "age": 19,
+  "college": "GPA",
+  "address": {
+    "country": "India",
+    "state": "Maharashtra",
+    "dist": "Pune"
+  }
+}
+```

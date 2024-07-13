@@ -1,7 +1,1 @@
-[
-  { "id": 1, "productName": "nailPaint", "price": 20 },
-  { "id": 2, "productName": "EarRings", "price": 50 },
-  { "id": 3, "productName": "NackLane", "price": 350 },
-  { "id": 4, "productName": "Braclate", "price": 80 },
-  { "id": "5", "productName": "braclet", "price": 10 }
-]
+[{"id":1,"productName":"nailPaint","price":20},{"id":2,"productName":"EarRings","price":50},{"id":3,"productName":"NackLane","price":350},{"id":4,"productName":"Braclate","price":80}]
