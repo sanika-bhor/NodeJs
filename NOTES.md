@@ -68,3 +68,15 @@ JSON.parse() is a method in NodeJs that converts a JSON string into a JavaScript
 ```javascript
 JSON.parse(data.toString());
 ```
+
+- **JSON.stringify()**:
+
+JSON.stringify() is a method in nodeJs that converts a JavaScript object or value to a JSON string. This is useful when you need to send data to a server or save it in a file in JSON format.
+
+**Snytax**:
+```javascript
+JSON.stringify(value);
+```
+
+
+
