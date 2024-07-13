@@ -9,14 +9,7 @@ var getAll = function () {
 };
 getAll();
 
-var getById = function (id) {
-  fs.readFile(filename, (err, data) => {
-    var member = JSON.parse(data.toString());
-    var dataById = member.find((person) => person.id === id);
-    console.log(dataById);
-  });
-};
-getById(4);
+
 
 var getByName = function (name) {
   fs.readFile(filename, (err, data) => {
@@ -26,6 +19,15 @@ var getByName = function (name) {
   });
 };
 getByName("sumit");
+
+var getById = function (id) {
+  fs.readFile(filename, (err, data) => {
+    var member = JSON.parse(data.toString());
+    var dataById = member.find((person) => person.id === id);
+    console.log(dataById);
+  });
+};
+getById(4);
 
 var remove = function (id) {
   fs.readFile(filename, (err, data) => {
