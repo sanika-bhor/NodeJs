@@ -39,3 +39,8 @@ performTask((err, data) => {
     }
 });
 ```
+
+## * JSON:-
+- JSON (JavaScript Object Notation) is a lightweight data-interchange format.
+- It is easy for humans to read and write and easy for machines to parse and generate.
+- JSON is commonly used for transmitting data in web applications.
