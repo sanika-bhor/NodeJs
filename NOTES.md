@@ -14,6 +14,7 @@ Modules in Node.js are reusable pieces of code that can be imported and used in 
 var express = require("express");
 ```
 
+                                      <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ## * Exporting Function:-
 Exporting in Node.js means making functions or variables available for use in other files. This is done using the 'module.exports' or 'exports' object.
@@ -24,6 +25,7 @@ exports.sayHello = function() {
     console.log("Hello from the handler module!");
 };
 ```
+                                      <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * Callback Functions:-
@@ -41,6 +43,7 @@ performTask((err, data) => {
     }
 });
 ```
+                                      <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * JSON:-
@@ -80,6 +83,7 @@ JSON.stringify() is a method in nodeJs that converts a JavaScript object or valu
 ```javascript
 JSON.stringify(value);
 ```
+                                      <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ## * read():-
 The find method in JavaScript is used to search an array for an element that meets a specified condition. It returns the first element that meets the condition. If no elements meet the condition, it returns undefined.
@@ -88,6 +92,7 @@ The find method in JavaScript is used to search an array for an element that mee
 ```javascript
 member.find((person) => person.id === id);
 ```
+                                      <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * filter():-
@@ -97,6 +102,17 @@ The filter method in JavaScript creates a new array with all elements that pass 
 ```javascript
  member.filter((person) => person.id != id);
 ```
+                                      <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * push():-
+The push() method in JavaScript is used to add one or more elements to the end of an array and returns the new length of the array.
+
+**Example**:
+```javascript
+ members.push(person);
+```
+                                      <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * fs Module:-
@@ -133,7 +149,7 @@ fs.writeFile(fileName, dataToBeWrite, (err) => {
 });
 
 ```
-
+                                      <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
