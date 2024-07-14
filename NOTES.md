@@ -80,7 +80,23 @@ JSON.stringify() is a method in nodeJs that converts a JavaScript object or valu
 ```javascript
 JSON.stringify(value);
 ```
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * read():-
+The find method in JavaScript is used to search an array for an element that meets a specified condition. It returns the first element that meets the condition. If no elements meet the condition, it returns undefined.
 
+**Example**:
+```javascript
+member.find((person) => person.id === id);
+```
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * filter():-
+The filter method in JavaScript creates a new array with all elements that pass the test implemented by the provided function. It is used to filter out elements from an array based on certain criteria.
+
+**Example**:
+```javascript
+ member.filter((person) => person.id != id);
+```
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * fs Module:-
@@ -118,6 +134,7 @@ fs.writeFile(fileName, dataToBeWrite, (err) => {
 
 ```
 
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
