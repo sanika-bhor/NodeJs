@@ -93,8 +93,8 @@ const fs = require('fs');
 
 ### File Operation:
 - **Reading Files**:
+  
 The readFile method reads a file asynchronously.
-
 The readFileSync method reads a file synchronously.
 
 **Snytax**:
