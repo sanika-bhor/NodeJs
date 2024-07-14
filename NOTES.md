@@ -93,8 +93,9 @@ const fs = require('fs');
 
 ### File Operation:
 - **Reading Files**:
+The readFile method reads a file asynchronously.
 
-JSON.parse() is a method in NodeJs that converts a JSON string into a JavaScript object. This is useful when you receive data as a JSON string and need to work with it as a JavaScript object.
+The readFileSync method reads a file synchronously.
 
 **Snytax**:
 ```javascript
