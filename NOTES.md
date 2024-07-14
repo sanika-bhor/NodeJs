@@ -1,4 +1,5 @@
 # <p align="center">NodeJs Notes</p>
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * Node.js Modules:-
 Modules in Node.js are reusable pieces of code that can be imported and used in other files. This helps in keeping your code organized and easier to manage.
@@ -23,6 +24,7 @@ exports.sayHello = function() {
     console.log("Hello from the handler module!");
 };
 ```
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * Callback Functions:-
 - A callback function is a function passed into another function as an argument, which is then executed inside the outer function to complete some kind of routine or action.
@@ -39,6 +41,7 @@ performTask((err, data) => {
     }
 });
 ```
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * JSON:-
 - JSON (JavaScript Object Notation) is a lightweight data-interchange format.
@@ -78,6 +81,7 @@ JSON.stringify() is a method in nodeJs that converts a JavaScript object or valu
 JSON.stringify(value);
 ```
 
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * fs Module:-
 The fs module in Node.js provides an API for interacting with the file system. It allows you to perform operations such as reading, writing, updating, and deleting files and directories.
