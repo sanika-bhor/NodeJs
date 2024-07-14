@@ -94,14 +94,26 @@ const fs = require('fs');
 ### File Operation:
 - **Reading Files**:
   
-The readFile method reads a file asynchronously.
-The readFileSync method reads a file synchronously.
+The 'readFile()' method reads a file asynchronously.<br>The 'readFileSync()' method reads a file synchronously.
 
 **Snytax**:
 ```javascript
 fs.readFile('fileName, (err, data) => {
   if (err) throw err;
   console.log(data);
+});
+
+```
+
+- **Writing Files**:
+  
+The 'writeFile' method writes data to a file asynchronously.<brThe 'writeFileSync' method writes data to a file synchronously.
+
+**Snytax**:
+```javascript
+fs.writeFile(fileName, dataToBeWrite, (err) => {
+  if (err) throw err;
+  console.log('File has been saved!');
 });
 
 ```
