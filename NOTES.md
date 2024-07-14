@@ -13,7 +13,7 @@ Modules in Node.js are reusable pieces of code that can be imported and used in 
 var express = require("express");
 ```
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------
 ## * Exporting Function:-
 Exporting in Node.js means making functions or variables available for use in other files. This is done using the 'module.exports' or 'exports' object.
 
@@ -85,6 +85,20 @@ The fs module in Node.js provides an API for interacting with the file system. I
 **Snytax**:
 ```javascript
 const fs = require('fs');
+```
+
+### File Operation:
+- **Reading Files**:
+
+JSON.parse() is a method in NodeJs that converts a JSON string into a JavaScript object. This is useful when you receive data as a JSON string and need to work with it as a JavaScript object.
+
+**Snytax**:
+```javascript
+fs.readFile('fileName, (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+
 ```
 
 
