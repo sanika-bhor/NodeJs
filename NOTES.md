@@ -152,6 +152,19 @@ fs.writeFile(fileName, dataToBeWrite, (err) => {
  <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+## * express Module:-
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications. It is widely used for building RESTful APIs.
 
+**Installing Express**:
+```javascript
+npm install express
+```
 
+### express object:
+The line var app = express(); initializes a new Express application. This app object is the main component of an Express application and allows you to define routes, middleware, and configuration settings.
+
+**syntax**:
+```javascript
+var app = express();
+```
 
