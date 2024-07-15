@@ -160,11 +160,41 @@ Express is a minimal and flexible Node.js web application framework that provide
 npm install express
 ```
 
-### express object:
+### instance of express:
 The line var app = express(); initializes a new Express application. This app object is the main component of an Express application and allows you to define routes, middleware, and configuration settings.
 
 **syntax**:
 ```javascript
 var app = express();
 ```
+ <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * Middleware:-
+app.use() is a method in Express used to apply middleware functions to your application. Middleware functions are functions that execute during the lifecycle of a request to the server, and can modify the request and response objects.
+
+**syntax**:
+```javascript
+app.use(express.json());
+```
+
+ <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * Routing in Express.js:-
+Routing in Express.js refers to how an application's endpoints (URIs) respond to client requests. It defines how an application responds to a client request for a specific URI (or endpoint), with a specific HTTP request method (GET, POST, etc.).
+
+**syntax**:
+```javascript
+// Route for handling GET requests to the root URL
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+// Route for handling POST requests to the '/submit' URL
+app.post('/submit', (req, res) => {
+  res.send('Form Submitted');
+});
+```
+
 
