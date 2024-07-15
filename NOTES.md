@@ -246,3 +246,27 @@ app.delete(path, (req,res)=>{
 });
 
 ```
+
+ <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * body-parser module:-
+The body-parser module in Express.js is a middleware that extracts the entire body portion of an incoming request stream and exposes it on req.body. This module is essential for handling POST, PUT, DELETE, and PATCH requests where data is sent to the server from a form or an API client.
+
+### Installation:
+```javascript
+npm install body-parser
+```
+### Integration:
+```javascript
+const bodyParser = require('body-parser');
+```
+### Middleware Setup:
+```javascript
+app.use(bodyParser.json());
+```
+bodyParser.json() parses JSON-encoded bodies and populates req.body with the parsed JSON object.
+
+```javascript
+app.use(bodyParser.urlencoded({ extended: true }));
+```
+bodyParser.urlencoded() parses URL-encoded bodies (typically sent by HTML forms) and populates req.body with the parsed data. The extended: true option allows parsing of rich objects and arrays.
