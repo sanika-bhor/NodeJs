@@ -211,4 +211,38 @@ app.get(path, (req,res)=>{
 
 ```
 
+- #### **app.post()**:-
 
+The app.post() method in Express.js is used to define a route handler that responds to HTTP POST requests at a specific route or endpoint on the server. It allows your Express application to handle incoming data and perform operations based on that data when clients submit forms or send data via POST requests.
+
+**syntax**:
+```javascript
+app.post(path, (req,res)=>{
+    //handling post request
+});
+
+```
+
+- #### **app.put()**:-
+
+The app.put() method in Express.js is used to define a route handler that responds to HTTP PUT requests at a specific route or endpoint on the server. It allows your Express application to update resources on the server based on data sent by clients using the HTTP PUT method.
+
+**syntax**:
+```javascript
+app.put(path, (req,res)=>{
+    //handling post request
+});
+
+```
+
+- #### **app.delete()**:-
+
+The app.delete() method in Express.js is used to define a route handler that responds to HTTP DELETE requests at a specific route or endpoint on the server. It allows your Express application to delete resources on the server based on data sent by clients using the HTTP DELETE method.
+
+**syntax**:
+```javascript
+app.delete(path, (req,res)=>{
+    //handling post request
+});
+
+```
