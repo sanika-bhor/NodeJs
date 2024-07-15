@@ -18,10 +18,7 @@ app.get('/',(req,res)=>{
 });
 
 
-app.get("/api/hello",(req,res)=>
-{
-        res.send("<h1>hello from server</h1>");
-});
+
 
 // get all data api
 app.get("/api/people",(req,res)=>
@@ -32,6 +29,10 @@ app.get("/api/people",(req,res)=>
             var members=JSON.parse(data.toString());
             res.send(members);
         });
+});
+
+app.get("/api/hello", (req, res) => {
+  res.send("<h1>hello from server</h1>");
 });
 
 // get data by id api
