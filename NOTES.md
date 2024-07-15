@@ -196,5 +196,19 @@ app.post('/submit', (req, res) => {
   res.send('Form Submitted');
 });
 ```
+### Routing Methods:
+In Express.js, routing methods correspond to HTTP request methods (such as GET, POST, PUT, DELETE, etc.) and are used to define how the server should respond to client requests for specific routes.
+
+- #### **app.get()**:-
+
+The app.get() method in Express.js is used to define a route handler that responds to HTTP GET requests at a specific route or endpoint on the server. It is one of the most commonly used routing methods in Express for handling GET requests.
+
+**syntax**:
+```javascript
+app.get(path, (req,res)=>{
+    //handling get request
+});
+
+```
 
 
