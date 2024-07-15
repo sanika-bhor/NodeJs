@@ -1,4 +1,5 @@
 # <p align="center">NodeJs Notes</p>
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * Node.js Modules:-
 Modules in Node.js are reusable pieces of code that can be imported and used in other files. This helps in keeping your code organized and easier to manage.
@@ -13,7 +14,8 @@ Modules in Node.js are reusable pieces of code that can be imported and used in 
 var express = require("express");
 ```
 
-
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
 ## * Exporting Function:-
 Exporting in Node.js means making functions or variables available for use in other files. This is done using the 'module.exports' or 'exports' object.
 
@@ -23,6 +25,8 @@ exports.sayHello = function() {
     console.log("Hello from the handler module!");
 };
 ```
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * Callback Functions:-
 - A callback function is a function passed into another function as an argument, which is then executed inside the outer function to complete some kind of routine or action.
@@ -39,6 +43,8 @@ performTask((err, data) => {
     }
 });
 ```
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * JSON:-
 - JSON (JavaScript Object Notation) is a lightweight data-interchange format.
@@ -77,7 +83,190 @@ JSON.stringify() is a method in nodeJs that converts a JavaScript object or valu
 ```javascript
 JSON.stringify(value);
 ```
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * read():-
+The find method in JavaScript is used to search an array for an element that meets a specified condition. It returns the first element that meets the condition. If no elements meet the condition, it returns undefined.
 
+**Example**:
+```javascript
+member.find((person) => person.id === id);
+```
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * filter():-
+The filter method in JavaScript creates a new array with all elements that pass the test implemented by the provided function. It is used to filter out elements from an array based on certain criteria.
+
+**Example**:
+```javascript
+ member.filter((person) => person.id != id);
+```
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * push():-
+The push() method in JavaScript is used to add one or more elements to the end of an array and returns the new length of the array.
+
+**Example**:
+```javascript
+ members.push(person);
+```
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * fs Module:-
+The fs module in Node.js provides an API for interacting with the file system. It allows you to perform operations such as reading, writing, updating, and deleting files and directories.
 
+**Snytax**:
+```javascript
+const fs = require('fs');
+```
+
+### File Operation:
+- **Reading Files**:
+  
+The 'readFile()' method reads a file asynchronously.<br>The 'readFileSync()' method reads a file synchronously.
+
+**Snytax**:
+```javascript
+fs.readFile('fileName, (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+
+```
+
+- **Writing Files**:
+  
+The 'writeFile' method writes data to a file asynchronously.<brThe 'writeFileSync' method writes data to a file synchronously.
+
+**Snytax**:
+```javascript
+fs.writeFile(fileName, dataToBeWrite, (err) => {
+  if (err) throw err;
+  console.log('File has been saved!');
+});
+
+```
+ <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * express Module:-
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications. It is widely used for building RESTful APIs.
+
+**Installing Express**:
+```javascript
+npm install express
+```
+
+### instance of express:
+The line var app = express(); initializes a new Express application. This app object is the main component of an Express application and allows you to define routes, middleware, and configuration settings.
+
+**syntax**:
+```javascript
+var app = express();
+```
+ <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * Middleware:-
+app.use() is a method in Express used to apply middleware functions to your application. Middleware functions are functions that execute during the lifecycle of a request to the server, and can modify the request and response objects.
+
+**syntax**:
+```javascript
+app.use(express.json());
+```
+
+ <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * Routing in Express.js:-
+Routing in Express.js refers to how an application's endpoints (URIs) respond to client requests. It defines how an application responds to a client request for a specific URI (or endpoint), with a specific HTTP request method (GET, POST, etc.).
+
+**syntax**:
+```javascript
+// Route for handling GET requests to the root URL
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+// Route for handling POST requests to the '/submit' URL
+app.post('/submit', (req, res) => {
+  res.send('Form Submitted');
+});
+```
+### Routing Methods:
+In Express.js, routing methods correspond to HTTP request methods (such as GET, POST, PUT, DELETE, etc.) and are used to define how the server should respond to client requests for specific routes.
+
+- #### **app.get()**:-
+
+The app.get() method in Express.js is used to define a route handler that responds to HTTP GET requests at a specific route or endpoint on the server. It is one of the most commonly used routing methods in Express for handling GET requests.
+
+**syntax**:
+```javascript
+app.get(path, (req,res)=>{
+    //handling get request
+});
+
+```
+
+- #### **app.post()**:-
+
+The app.post() method in Express.js is used to define a route handler that responds to HTTP POST requests at a specific route or endpoint on the server. It allows your Express application to handle incoming data and perform operations based on that data when clients submit forms or send data via POST requests.
+
+**syntax**:
+```javascript
+app.post(path, (req,res)=>{
+    //handling post request
+});
+
+```
+
+- #### **app.put()**:-
+
+The app.put() method in Express.js is used to define a route handler that responds to HTTP PUT requests at a specific route or endpoint on the server. It allows your Express application to update resources on the server based on data sent by clients using the HTTP PUT method.
+
+**syntax**:
+```javascript
+app.put(path, (req,res)=>{
+    //handling post request
+});
+
+```
+
+- #### **app.delete()**:-
+
+The app.delete() method in Express.js is used to define a route handler that responds to HTTP DELETE requests at a specific route or endpoint on the server. It allows your Express application to delete resources on the server based on data sent by clients using the HTTP DELETE method.
+
+**syntax**:
+```javascript
+app.delete(path, (req,res)=>{
+    //handling post request
+});
+
+```
+
+ <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * body-parser module:-
+The body-parser module in Express.js is a middleware that extracts the entire body portion of an incoming request stream and exposes it on req.body. This module is essential for handling POST, PUT, DELETE, and PATCH requests where data is sent to the server from a form or an API client.
+
+- ### Installation:
+```javascript
+npm install body-parser
+```
+- ### Integration:
+```javascript
+const bodyParser = require('body-parser');
+```
+- ### Middleware Setup:
+```javascript
+app.use(bodyParser.json());
+```
+bodyParser.json() parses JSON-encoded bodies and populates req.body with the parsed JSON object.
+
+```javascript
+app.use(bodyParser.urlencoded({ extended: true }));
+```
+bodyParser.urlencoded() parses URL-encoded bodies (typically sent by HTML forms) and populates req.body with the parsed data. The extended: true option allows parsing of rich objects and arrays.
