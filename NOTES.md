@@ -85,7 +85,7 @@ JSON.stringify(value);
 ```
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-## * read():-⤵
+## * read():-
 The find method in JavaScript is used to search an array for an element that meets a specified condition. It returns the first element that meets the condition. If no elements meet the condition, it returns undefined.
 
 **Example**:
