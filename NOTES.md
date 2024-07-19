@@ -302,3 +302,23 @@ emitter.emit(eventName);
 The emit method in the EventEmitter class is used to trigger an event. When an event is emitted, all listeners registered for that event are called synchronously, in the order they were registered.
 
 
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * mysql module:-
+The mysql module in Node.js is used to interact with MySQL databases. It provides a simple and powerful way to execute SQL queries and manage database connections.
+
+**installation:**
+```javascript
+npm install mysql
+```
+### mysql2 module:-
+The mysql2 module in Node.js is a modern, optimized version of the mysql module. It provides enhanced performance and supports additional features such as prepared statements and promise-based APIs.
+
+**installation:**
+```javascript
+npm install mysql2
+```
+
+
+
+
