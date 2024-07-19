@@ -305,7 +305,7 @@ The emit method in the EventEmitter class is used to trigger an event. When an e
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ## * Database:-
- ### importing module
+ ### ➡ importing module
 - ### mysql module:
   
 The mysql module in Node.js is used to interact with MySQL databases. It provides a simple and powerful way to execute SQL queries and manage database connections.
@@ -323,7 +323,7 @@ The mysql2 module in Node.js is a modern, optimized version of the mysql module.
 npm install mysql2
 ```
 
-### Configuring the Database Connection
+### ➡ Configuring the Database Connection
 **syntax:**
 ```javascript
 var conUrl = {
@@ -337,7 +337,7 @@ var conUrl = {
 Configuring the database connection is a crucial step in setting up your Node.js application to interact with a MySQL database. This configuration involves specifying details like the database host, user credentials, and the specific database you want to access.
 
 
-###  Creating the Database Connection
+### ➡ Creating the Database Connection
 **syntax:**
 ```javascript
 const connection = mysql.createConnection(conUrl);
@@ -345,7 +345,7 @@ const connection = mysql.createConnection(conUrl);
 To create a connection to a MySQL database using the mysql2 module, you use the mysql.createConnection method. This method sets up a connection to the database with the specified configuration.
 
 
-### Connecting to the Database
+### ➡ Connecting to the Database
 **syntax:**
 ```javascript
 connection.connect((err) => {
@@ -359,7 +359,7 @@ connection.connect((err) => {
 Call the connect method on the connection object to establish a connection to the database. 
 
 
-###  performing database operation
+###  ➡ performing database operation
 **syntax:**
 ```javascript
 connection.query(sql, [values], callback);
