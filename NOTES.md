@@ -270,3 +270,19 @@ bodyParser.json() parses JSON-encoded bodies and populates req.body with the par
 app.use(bodyParser.urlencoded({ extended: true }));
 ```
 bodyParser.urlencoded() parses URL-encoded bodies (typically sent by HTML forms) and populates req.body with the parsed data. The extended: true option allows parsing of rich objects and arrays.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * EventEmitter:-
+In Node.js, the EventEmitter is a class from the events module that provides a way to handle asynchronous events. It allows you to define and listen to custom events, making it a powerful tool for creating event-driven applications.
+
+- ### events Module:
+```javascript
+var eventModule = require("events");
+```
+- ### EventEmitter Class:
+```javascript
+var emitter= new eventModule.EventEmitter();
+```
+The EventEmitter class allows you to create, fire, and listen to custom events.
+
