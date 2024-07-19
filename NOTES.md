@@ -1,7 +1,7 @@
 # <p align="center">NodeJs Notes</p>
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## * Node.js Modules:-
+## * Node.js Modules:- ⤵
 Modules in Node.js are reusable pieces of code that can be imported and used in other files. This helps in keeping your code organized and easier to manage.
 
 ### Types of Modules:
@@ -16,7 +16,7 @@ var express = require("express");
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-## * Exporting Function:-
+## * Exporting Function:-⤵
 Exporting in Node.js means making functions or variables available for use in other files. This is done using the 'module.exports' or 'exports' object.
 
 ### Syntax:
@@ -28,7 +28,7 @@ exports.sayHello = function() {
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## * Callback Functions:-
+## * Callback Functions:-⤵
 - A callback function is a function passed into another function as an argument, which is then executed inside the outer function to complete some kind of routine or action.
 - Callbacks are used to handle asynchronous operations.
 - They ensure that code runs only after a certain task has completed, preventing blocking of other operations.
@@ -46,7 +46,7 @@ performTask((err, data) => {
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## * JSON:-
+## * JSON:-⤵
 - JSON (JavaScript Object Notation) is a lightweight data-interchange format.
 - It is easy for humans to read and write and easy for machines to parse and generate.
 - JSON is commonly used for transmitting data in web applications.
@@ -66,7 +66,7 @@ performTask((err, data) => {
 ```
 
 ### Working with JSON:
-- **JSON.parse()**:
+- ➡ **JSON.parse()**:
 
 JSON.parse() is a method in NodeJs that converts a JSON string into a JavaScript object. This is useful when you receive data as a JSON string and need to work with it as a JavaScript object.
 
@@ -75,7 +75,7 @@ JSON.parse() is a method in NodeJs that converts a JSON string into a JavaScript
 JSON.parse(data.toString());
 ```
 
-- **JSON.stringify()**:
+- ➡ **JSON.stringify()**:
 
 JSON.stringify() is a method in nodeJs that converts a JavaScript object or value to a JSON string. This is useful when you need to send data to a server or save it in a file in JSON format.
 
@@ -85,7 +85,7 @@ JSON.stringify(value);
 ```
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-## * read():-
+## * read():-⤵
 The find method in JavaScript is used to search an array for an element that meets a specified condition. It returns the first element that meets the condition. If no elements meet the condition, it returns undefined.
 
 **Example**:
@@ -95,7 +95,7 @@ member.find((person) => person.id === id);
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## * filter():-
+## * filter():-⤵
 The filter method in JavaScript creates a new array with all elements that pass the test implemented by the provided function. It is used to filter out elements from an array based on certain criteria.
 
 **Example**:
@@ -105,7 +105,7 @@ The filter method in JavaScript creates a new array with all elements that pass 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## * push():-
+## * push():-⤵
 The push() method in JavaScript is used to add one or more elements to the end of an array and returns the new length of the array.
 
 **Example**:
@@ -115,7 +115,7 @@ The push() method in JavaScript is used to add one or more elements to the end o
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## * fs Module:-
+## * fs Module:-⤵
 The fs module in Node.js provides an API for interacting with the file system. It allows you to perform operations such as reading, writing, updating, and deleting files and directories.
 
 **Snytax**:
@@ -124,7 +124,7 @@ const fs = require('fs');
 ```
 
 ### File Operation:
-- **Reading Files**:
+- ➡ **Reading Files**:
   
 The 'readFile()' method reads a file asynchronously.<br>The 'readFileSync()' method reads a file synchronously.
 
@@ -137,7 +137,7 @@ fs.readFile('fileName, (err, data) => {
 
 ```
 
-- **Writing Files**:
+- ➡ **Writing Files**:
   
 The 'writeFile' method writes data to a file asynchronously.<brThe 'writeFileSync' method writes data to a file synchronously.
 
@@ -152,7 +152,7 @@ fs.writeFile(fileName, dataToBeWrite, (err) => {
  <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## * express Module:-
+## * express Module:- ⤵
 Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications. It is widely used for building RESTful APIs.
 
 **Installing Express**:
@@ -170,7 +170,7 @@ var app = express();
  <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## * Middleware:-
+## * Middleware:-⤵
 app.use() is a method in Express used to apply middleware functions to your application. Middleware functions are functions that execute during the lifecycle of a request to the server, and can modify the request and response objects.
 
 **syntax**:
@@ -181,7 +181,7 @@ app.use(express.json());
  <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## * Routing in Express.js:-
+## * Routing in Express.js:-⤵
 Routing in Express.js refers to how an application's endpoints (URIs) respond to client requests. It defines how an application responds to a client request for a specific URI (or endpoint), with a specific HTTP request method (GET, POST, etc.).
 
 **syntax**:
@@ -199,7 +199,7 @@ app.post('/submit', (req, res) => {
 ### Routing Methods:
 In Express.js, routing methods correspond to HTTP request methods (such as GET, POST, PUT, DELETE, etc.) and are used to define how the server should respond to client requests for specific routes.
 
-- #### **app.get()**:-
+-  #### ➡ **app.get()**:-
 
 The app.get() method in Express.js is used to define a route handler that responds to HTTP GET requests at a specific route or endpoint on the server. It is one of the most commonly used routing methods in Express for handling GET requests.
 
@@ -211,7 +211,7 @@ app.get(path, (req,res)=>{
 
 ```
 
-- #### **app.post()**:-
+- #### ➡ **app.post()**:-
 
 The app.post() method in Express.js is used to define a route handler that responds to HTTP POST requests at a specific route or endpoint on the server. It allows your Express application to handle incoming data and perform operations based on that data when clients submit forms or send data via POST requests.
 
@@ -223,7 +223,7 @@ app.post(path, (req,res)=>{
 
 ```
 
-- #### **app.put()**:-
+- #### ➡ **app.put()**:-
 
 The app.put() method in Express.js is used to define a route handler that responds to HTTP PUT requests at a specific route or endpoint on the server. It allows your Express application to update resources on the server based on data sent by clients using the HTTP PUT method.
 
@@ -235,7 +235,7 @@ app.put(path, (req,res)=>{
 
 ```
 
-- #### **app.delete()**:-
+- #### ➡ **app.delete()**:-
 
 The app.delete() method in Express.js is used to define a route handler that responds to HTTP DELETE requests at a specific route or endpoint on the server. It allows your Express application to delete resources on the server based on data sent by clients using the HTTP DELETE method.
 
@@ -249,7 +249,7 @@ app.delete(path, (req,res)=>{
 
  <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-## * body-parser module:-
+## * body-parser module:-⤵
 The body-parser module in Express.js is a middleware that extracts the entire body portion of an incoming request stream and exposes it on req.body. This module is essential for handling POST, PUT, DELETE, and PATCH requests where data is sent to the server from a form or an API client.
 
 - ### Installation:
@@ -273,28 +273,28 @@ bodyParser.urlencoded() parses URL-encoded bodies (typically sent by HTML forms)
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-## * EventEmitter:-
+## * EventEmitter:-⤵
 In Node.js, the EventEmitter is a class from the events module that provides a way to handle asynchronous events. It allows you to define and listen to custom events, making it a powerful tool for creating event-driven applications.
 
-- ### events Module:
+- ### ➡ events Module:
 ```javascript
 var eventModule = require("events");
 ```
 The events module in Node.js is a core module that provides a way to work with events, including creating, emitting, and handling events in an asynchronous and event-driven manner.
 
-- ### EventEmitter Class:
+- ### ➡ EventEmitter Class:
 ```javascript
 var emitter= new eventModule.EventEmitter();
 ```
 The EventEmitter class allows you to create, fire, and listen to custom events.
 
-- ### addListener() method::
+- ### ➡ addListener() method::
 ```javascript
 emitter.addListener(event, listener);
 ```
  It is used to register an event listener for a specific event. When the event is emitted, all registered listeners for that event will be called in the order they were registered.
 
-- ### emit() method::
+- ### ➡ emit() method::
 ```javascript
 emitter.emit(eventName);
 
@@ -304,7 +304,7 @@ The emit method in the EventEmitter class is used to trigger an event. When an e
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-## * Database:-
+## * Database:-⤵
  ### ➡ importing module
 - ### mysql module:
   
