@@ -407,6 +407,10 @@ In the MVC (Model-View-Controller) architecture, the Controller acts as an inter
 ###  ➡ Router:
 In the MVC (Model-View-Controller) architecture, the Router is responsible for mapping URLs to the appropriate controller actions. It defines the endpoints and specifies how the application should respond to various HTTP requests.
 
+**syntax:**
+```javascript
+app.route('/task').get(userController.getAll)
+```
 
 
 
