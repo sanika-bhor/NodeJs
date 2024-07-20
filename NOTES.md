@@ -391,6 +391,22 @@ project
 ├── routes
 │   └── userRoutes.js
 │
-└── app.js
+└── server.js
 
 ```
+
+### ➡ Model:
+In the MVC (Model-View-Controller) architecture, the Model is responsible for managing the data, logic, and rules of the application. It directly interacts with the database or any other data storage system, and it represents the data that is being manipulated and displayed in the application.
+
+### ➡ View:
+In the MVC (Model-View-Controller) architecture, the View is responsible for presenting data to the user and handling user interactions. It is the user interface of the application, displaying data from the Model and sending user commands to the Controller.
+
+### ➡ Controller:
+In the MVC (Model-View-Controller) architecture, the Controller acts as an intermediary between the Model and the View. It handles user input, processes it, and sends commands to the Model to update the data. The Controller also decides which View to display based on the user actions and the state of the application.
+
+###  ➡ Router:
+In the MVC (Model-View-Controller) architecture, the Router is responsible for mapping URLs to the appropriate controller actions. It defines the endpoints and specifies how the application should respond to various HTTP requests.
+
+
+
+
