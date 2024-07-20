@@ -367,3 +367,30 @@ connection.query(sql, [values], callback);
 The query() method of the mysql2 module is used to execute SQL queries against a MySQL database. It allows you to perform various database operations such as SELECT, INSERT, UPDATE, DELETE, and more.
 
 
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * MVC:-
+
+The Model-View-Controller (MVC) architecture is a design pattern used for developing web applications. It separates an application into three interconnected components: Model, View, and Controller. This separation helps manage the complexity of large applications and promotes organized code.
+
+**Directory Structure:**
+```javascript
+project
+│
+├── models
+│   └── userModel.js
+│
+├── views
+│   └── userView.ejs
+│
+├── controllers
+│   └── userController.js
+│
+├── routes
+│   └── userRoutes.js
+│
+└── app.js
+
+```
