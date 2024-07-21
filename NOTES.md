@@ -413,4 +413,19 @@ app.route('/task').get(userController.getAll)
 ```
 
 
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * express-session module:-
+
+express-session is a middleware for Express.js that enables session management in web applications. It allows you to store data specific to a user's session and access it across multiple requests. This is particularly useful for scenarios such as user authentication, storing user preferences, and maintaining a shopping cart.
+
+**Installation:**
+```javascript
+npm install express-session
+```
+
+**Importing:**
+```javascript
+var expressSession=require('express-session');
+```
 
