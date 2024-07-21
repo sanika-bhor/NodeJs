@@ -448,5 +448,29 @@ var sessinMiddleWare = expressSession({
 app.use(sessinMiddleWare);
 ```
 
+- **secret: "cart"**:
+  
+  A secret key used to sign the session ID cookie, ensuring the session ID is not tampered with on the client side. It should be a random string for security.
+
+- **saveUninitialized: true**:
+
+  Forces a session that is "uninitialized" to be saved to the store. An uninitialized session is a new session that hasn't been modified. This can be useful for implementing login sessions, tracking user interactions, etc.
+
+- **cookie: { maxAge: oneday }**:
+
+  Configures the session cookie. The maxAge property sets the expiration time for the cookie, which in this case is set to one day (24 hours). The value of oneday is defined as 1000 * 60 * 60 * 24 milliseconds.
+
+- **resave: false**:
+
+  Prevents the session from being saved back to the session store if it wasn’t modified during the request. This can help reduce unnecessary operations and improve performance.
+
+- **app.use(sessinMiddleWare);**:
+
+  This line applies the session middleware to the entire application. All incoming requests will pass through this middleware, allowing the session data to be accessed or modified as needed.
+
+oute('/task').get(userController.getAll)
+```
+
+
 
 
