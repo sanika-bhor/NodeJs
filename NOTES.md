@@ -429,3 +429,24 @@ npm install express-session
 var expressSession=require('express-session');
 ```
 
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * State Mangement:-
+
+State management is a critical aspect of web application development. It involves managing the state of an application, which includes the data, user interactions, and other relevant information that determines the behavior and appearance of the application. 
+
+### ➡  Session configuration:
+**Syntax:**
+```javascript
+var sessinMiddleWare = expressSession({
+  secret: "cart",
+  saveUninitialized: true,
+  cookie: { maxAge: oneday },
+  resave: false,
+});
+app.use(sessinMiddleWare);
+```
+
+
+
