@@ -541,6 +541,32 @@ const item = {
 
 
 
+### ➡  Destroy Session
+**Syntax:**
+```javascript
+ req.session.destroy((err)=>
+ {
+    if(err)
+    {
+        res.send("<h1>Failed to destroy session</h1>");
+    }
+    else
+    {
+        res.send("<h1> destroy session. cart successfully checkout</h1>");
+    }
+  });
+```
 
+- **Destroying the Session**:
+  
+    This line calls the destroy method on the session object (req.session). The destroy method terminates the session and clears all session data. It takes a callback function that gets executed once the session is destroyed (or if an error occurs).
+
+- **Handling Errors**:
+
+    Inside the callback function, this conditional checks if there was an error during the session destruction. If an error occurred, it sends an HTML response indicating the failure.
+
+- **Session Destroyed Successfully**:
+
+   If no error occurred, the session was successfully destroyed. The code inside the else block sends an HTML response confirming the successful checkout and session destruction.
 
 
