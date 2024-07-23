@@ -498,12 +498,12 @@ app.use(sessinMiddleWare);
 ### ➡  add New Session Data
 **Syntax:**
 ```javascript
-        const item = {
-                id: ,
-                productName: 'pen',
-                price: 5,
-        };
-    req.session.cart.push(item);
+const item = {
+       id: 1,
+       productName: 'pen',
+       price: 5,
+};
+ req.session.cart.push(item);
 ```
 
 - **Creating Cart Item**:
@@ -515,6 +515,28 @@ app.use(sessinMiddleWare);
     This line adds the item object to the cart array stored in the session.
 
 
+
+### ➡  Remove Session Data
+**Syntax:**
+```javascript
+  if (req.session.cart)
+  {
+      req.session.cart = req.session.cart.filter((product) => product.id !== id);
+      res.send("<h1>your product removed from cart</h1>");
+  }
+  else
+  {
+    res.send("<h1>cart does not contain this product</h1>");
+  }
+```
+
+- **Checking for Cart in Session**:
+  
+   This conditional checks whether there is a cart property in the session object. The session object (req.session) is used to store and retrieve session data for the current user.
+
+- **Removing Product from Cart**:
+
+    This line filters the cart array stored in the session. It removes the product with the matching ID by keeping only the products whose ID does not match the provided ID.
 
 
 
