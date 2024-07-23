@@ -570,3 +570,42 @@ const item = {
    If no error occurred, the session was successfully destroyed. The code inside the else block sends an HTML response confirming the successful checkout and session destruction.
 
 
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * ejs Module:-
+
+The EJS (Embedded JavaScript) module is a popular templating engine for Node.js that allows you to generate HTML markup with plain JavaScript. It helps in creating dynamic web pages by embedding JavaScript code within your HTML templates.
+
+**Installation:**
+```javascript
+npm install ejs
+```
+
+### ➡  Rendering the EJS Template:
+
+renderFile() is a method provided by the EJS templating engine to render EJS templates from a file. This method is particularly useful when you want to render a template file and send the rendered HTML as a response in a Node.js application. 
+
+**Syntax:**
+```javascript
+ ejs.renderFile("pathOfEjsFile",{},{},(err,template)=>{};
+```
+
+### ➡  Set the EJS View Engine:
+
+In an Express.js application, the app.set('view engine', 'ejs') configuration is used to set the default templating engine for the application. This makes it easier to render views without having to specify the engine every time.
+
+**Syntax:**
+```javascript
+app.set('view engine', 'ejs');
+```
+
+### ➡ render():
+
+he render() method in Express.js is used to render a view template and send the resulting HTML as the response to the client. This method is particularly useful for generating dynamic web pages by combining server-side data with HTML templates.
+
+**Syntax:**
+```javascript
+res.render(view [, data]);
+
+```
