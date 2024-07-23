@@ -495,6 +495,27 @@ app.use(sessinMiddleWare);
   If the cart property does not exist in the session, a new cart is initialized as an empty array with req.session.cart = [];. Then, the server responds with this empty cart using res.send(req.session.cart);
 
 
+### ➡  add New Session Data
+**Syntax:**
+```javascript
+        const item = {
+                id: ,
+                productName: 'pen',
+                price: 5,
+        };
+    req.session.cart.push(item);
+```
+
+- **Creating Cart Item**:
+  
+    This line creates a new object called item that contains the product ID, product name, and price. This object represents the product to be added to the cart.
+
+- **Adding Product to Cart**:
+
+    This line adds the item object to the cart array stored in the session.
+
+
+
 
 
 
