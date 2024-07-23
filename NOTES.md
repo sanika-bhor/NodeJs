@@ -469,6 +469,70 @@ app.use(sessinMiddleWare);
   This line applies the session middleware to the entire application. All incoming requests will pass through this middleware, allowing the session data to be accessed or modified as needed.
 
 
+### ➡  Session configuration:
+**Syntax:**
+```javascript
+var sessinMiddleWare = expressSession({
+  secret: "cart",
+  saveUninitialized: true,
+  cookie: { maxAge: oneday },
+  resave: false,
+});
+app.use(sessinMiddleWare);
+```
+
+- **secret: "cart"**:
+  
+  A secret key used to sign the session ID cookie, ensuring the session ID is not tampered with on the client side. It should be a random string for security.
+
+- **saveUninitialized: true**:
+
+  Forces a session that is "uninitialized" to be saved to the store. An uninitialized session is a new session that hasn't been modified. This can be useful for implementing login sessions, tracking user interactions, etc.
+
+- **cookie: { maxAge: oneday }**:
+
+  Configures the session cookie. The maxAge property sets the expiration time for the cookie, which in this case is set to one day (24 hours). The value of oneday is defined as 1000 * 60 * 60 * 24 milliseconds.
+
+- **resave: false**:
+
+  Prevents the session from being saved back to the session store if it wasn’t modified during the request. This can help reduce unnecessary operations and improve performance.
+
+- **app.use(sessinMiddleWare);**:
+
+  This line applies the session middleware to the entire application. All incoming requests will pass through this middleware, allowing the session data to be accessed or modified as needed.
+
+
+
+
+
+### ➡  get Session Data
+**Syntax:**
+```javascript
+    if (req.session.cart) {
+        res.send(req.session.cart);
+    } else {
+        req.session.cart = [];
+        res.send(req.session.cart);
+    }
+
+```
+
+- **Checking for Cart in Session**:
+  
+    This conditional checks whether there is a cart property in the session object. The session object (req.session) is used to store and retrieve session data for the current user.
+
+- **Cart Exists**:
+
+  If the cart property exists in the session, the server responds with the cart data using res.send(req.session.cart);. This sends the cart data back to the client.
+
+- **Cart Does Not Exist**:
+
+  If the cart property does not exist in the session, a new cart is initialized as an empty array with req.session.cart = [];. Then, the server responds with this empty cart using res.send(req.session.cart);
+
+
+
+
+
 
 
 
