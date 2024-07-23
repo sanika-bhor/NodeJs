@@ -468,8 +468,6 @@ app.use(sessinMiddleWare);
 
   This line applies the session middleware to the entire application. All incoming requests will pass through this middleware, allowing the session data to be accessed or modified as needed.
 
-oute('/task').get(userController.getAll)
-```
 
 
 
