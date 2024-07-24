@@ -609,3 +609,19 @@ he render() method in Express.js is used to render a view template and send the 
 res.render(view [, data]);
 
 ```
+### ➡ EJS Tags:
+
+EJS (Embedded JavaScript) tags are used within EJS templates to embed JavaScript code, which allows you to create dynamic HTML content. 
+
+**Example:**
+```javascript
+<p>Welcome, <%= username %>!</p>
+```
+
+If username is Sanika, this renders as:
+**Example:**
+```javascript
+<p>Welcome, Sanika!</p>
+```
+
+By using these tag appropriately, you can create dynamic and secure templates for your web applications.
