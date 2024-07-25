@@ -703,3 +703,19 @@ res.send(token);
 
 ```
 
+### ➡ verify():
+
+The jwt.verify() method is used to verify the validity of a JSON Web Token (JWT). It checks if the token is correctly signed and optionally verifies the token's claims, such as expiration time.
+
+**Syntax:**
+```javascript
+jwt.verify(token, secretOrPublicKey)
+```
+
+**Example:**
+```javascript
+//verify token
+ var extractToken=jwt.verify(token,jwtSecreteKey);
+// display token client 
+res.send(extractToken.client);
+```
