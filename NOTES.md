@@ -719,3 +719,18 @@ jwt.verify(token, secretOrPublicKey)
 // display token client 
 res.send(extractToken.client);
 ```
+
+### ➡ decode():
+
+The jwt.decode() method is used to decode a JSON Web Token (JWT) without verifying its signature. This method allows you to extract and view the token's payload, but it does not ensure that the token is valid or has not been tampered with.
+
+**Syntax:**
+```javascript
+jwt.decode(token)
+```
+
+**Example:**
+```javascript
+const decoded = jwt.decode(token);
+res.send(decoded);
+```
