@@ -665,3 +665,41 @@ If username is Sanika, this renders as:
 ```
 
 By using these tag appropriately, you can create dynamic and secure templates for your web applications.
+
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * JWT Module:-
+
+JSON Web Tokens (JWT) are a compact, URL-safe means of representing claims to be transferred between two parties. The jsonwebtoken library in Node.js is used to sign, verify, and decode JWTs. 
+
+**Installation:**
+```javascript
+npm install jsonwebtoken
+
+```
+
+### ➡ sign():
+
+The jwt.sign() method is used to create a new JSON Web Token. It takes a payload and signs it with a secret key, optionally including additional options such as expiration time.
+
+**Syntax:**
+```javascript
+jwt.sign(dataTOIncludeInToken, secretOrPrivateKey);
+
+```
+
+**Example:**
+```javascript
+ var data={
+    time:Date(),
+    client: userData.email
+}
+// genrate token
+var token=jwt.sign(data,jwtSecreteKey);
+// display token 
+res.send(token);
+
+```
+
