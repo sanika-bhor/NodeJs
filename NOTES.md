@@ -6,6 +6,8 @@
  coding principles that can help you write clean, maintainable, and scalable code
 <hr>
  
+
+
  
 ### ➡  Separation of Concerns (SoC):
 Separation of Concerns (SoC) is a software design principle that aims to divide a computer program into distinct sections, each addressing a separate concern. A "concern" refers to a specific aspect of a program's functionality or responsibility. By adhering to SoC, you can create more maintainable, scalable, and understandable code.
