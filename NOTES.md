@@ -4,24 +4,31 @@
 
 ## * Coding Principles:-
  coding principles that can help you write clean, maintainable, and scalable code
+<hr>
+ 
  
 ### ➡  Separation of Concerns (SoC):
 Separation of Concerns (SoC) is a software design principle that aims to divide a computer program into distinct sections, each addressing a separate concern. A "concern" refers to a specific aspect of a program's functionality or responsibility. By adhering to SoC, you can create more maintainable, scalable, and understandable code.
 
 ### Example:
 In a web application, you might separate the data access logic Layer (DAL layer), business logic (Service layer), and presentation logic (UI layer).
+<hr>
+
 
 ### ➡  Hollywood Principle:
 The Hollywood Principle, often phrased as "Don't call us, we'll call you," is a software design principle that emphasizes a form of inversion of control. Instead of an application calling various components to perform actions, the components themselves will call into the application as needed. This principle helps create loosely coupled components and makes the system more modular and easier to maintain.
 
 ### Example:
 In Express, middleware functions are an example of the Hollywood Principle. The framework calls your middleware functions, rather than your application calling the framework.
+<hr>
+
 
 ### ➡   Don't Repeat Yourself (DRY):
 The DRY principle, which stands for "Don't Repeat Yourself," is a fundamental software development concept that aims to reduce repetition of code and information. By adhering to DRY, developers can create more efficient, maintainable, and readable codebases.
 
 ### Example:
 If multiple classes share the same functionality, abstract that functionality into a separate utility class or a method that can be reused.
+<hr>
 
 ### ➡  Keep It Simple, Stupid (KISS):
 The KISS principle stands for "Keep It Simple, Stupid." It emphasizes simplicity and straightforwardness in design and implementation. The goal is to avoid unnecessary complexity and keep things as simple as possible.
