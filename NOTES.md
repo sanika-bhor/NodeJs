@@ -16,6 +16,12 @@ The Hollywood Principle, often phrased as "Don't call us, we'll call you," is a 
 
 ### Example:
 In Express, middleware functions are an example of the Hollywood Principle. The framework calls your middleware functions, rather than your application calling the framework.
+
+### ➡   Don't Repeat Yourself (DRY):
+The DRY principle, which stands for "Don't Repeat Yourself," is a fundamental software development concept that aims to reduce repetition of code and information. By adhering to DRY, developers can create more efficient, maintainable, and readable codebases.
+
+### Example:
+If multiple classes share the same functionality, abstract that functionality into a separate utility class or a method that can be reused.
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
