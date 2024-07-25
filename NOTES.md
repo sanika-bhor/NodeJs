@@ -1,5 +1,23 @@
 # <p align="center">NodeJs Notes</p>
 ----------------------------------------------------------------------------------------------------------------------------------------------
+<!------------------------------------------------------------->
+
+## * Coding Principles:-
+ coding principles that can help you write clean, maintainable, and scalable code
+ 
+### ➡  Separation of Concerns (SoC):
+Separation of Concerns (SoC) is a software design principle that aims to divide a computer program into distinct sections, each addressing a separate concern. A "concern" refers to a specific aspect of a program's functionality or responsibility. By adhering to SoC, you can create more maintainable, scalable, and understandable code.
+
+### Example:
+In a web application, you might separate the data access logic Layer (DAL layer), business logic (Service layer), and presentation logic (UI layer).
+
+### ➡  Hollywood Principle:
+The Hollywood Principle, often phrased as "Don't call us, we'll call you," is a software design principle that emphasizes a form of inversion of control. Instead of an application calling various components to perform actions, the components themselves will call into the application as needed. This principle helps create loosely coupled components and makes the system more modular and easier to maintain.
+
+### Example:
+In Express, middleware functions are an example of the Hollywood Principle. The framework calls your middleware functions, rather than your application calling the framework.
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * Node.js Modules:- 
 Modules in Node.js are reusable pieces of code that can be imported and used in other files. This helps in keeping your code organized and easier to manage.
