@@ -22,6 +22,15 @@ The DRY principle, which stands for "Don't Repeat Yourself," is a fundamental so
 
 ### Example:
 If multiple classes share the same functionality, abstract that functionality into a separate utility class or a method that can be reused.
+
+### ➡  Keep It Simple, Stupid (KISS):
+The KISS principle stands for "Keep It Simple, Stupid." It emphasizes simplicity and straightforwardness in design and implementation. The goal is to avoid unnecessary complexity and keep things as simple as possible.
+
+### Example:
+We'll build a basic Node.js application using the Express framework to demonstrate the KISS principle.
+- Project Structure
+- Basic Server Setup
+- Simple Route Handlers
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
