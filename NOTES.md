@@ -755,7 +755,35 @@ AJAX stands for Asynchronous JavaScript and XML. It's a technique for creating f
         success: (data) =>
           {
               console.log(data);
-              let productList = document.getElementById("mylist");
           },
          });
 ```
+
+- ➡ **$.ajax():**
+
+ This is a jQuery function used to perform an asynchronous HTTP (Ajax) request.
+
+- ➡ **dataType: "json":**
+
+ Specifies the type of data expected from the server. In this case, it's JSON.
+
+- ➡ **url:"http://localhost:5050/api/product" :**
+
+Specifies the URL to which the request is sent. 
+
+- ➡ **type: "GET":**
+
+Specifies the type of request to be made, in this case, a GET request.
+
+- ➡ **success:**
+
+his is a callback function that is executed if the request succeeds.
+
+- ➡ **data:**
+
+his parameter will contain the data returned from the server.
+
+- ➡ **console.log(data):**
+
+Logs the returned data to the console.
+
