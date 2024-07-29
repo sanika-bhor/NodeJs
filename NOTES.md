@@ -823,29 +823,29 @@ he fetch API is a modern way to make HTTP requests in JavaScript. It's a promise
 
 - ### ➡ headers:
 
- The headers option is used to specify additional information about the request. In this case, the Content-Type header is set to application/json, indicating that the client expects a JSON response from the server.
+   The headers option is used to specify additional information about the request. In this case, the Content-Type header is set to application/json, indicating that the client expects a JSON response from the server.
 
 - ### ➡ .then:
 
- This method is called once the fetch request is completed. It takes a callback function that handles the response.
+   This method is called once the fetch request is completed. It takes a callback function that handles the response.
 
 - ### ➡ sync (response) => { ... }:
 
- An asynchronous arrow function that processes the response.
+   An asynchronous arrow function that processes the response.
 
 - ### ➡ response.ok:
 
- A boolean property that indicates if the response status is in the range 200-299, which means the request was successful.
+   A boolean property that indicates if the response status is in the range 200-299, which means the request was successful.
 
 - ### ➡ await response.json():
 
- This statement parses the response body as JSON. Since response.json() returns a promise, await is used to wait for the promise to resolve.
+   This statement parses the response body as JSON. Since response.json() returns a promise, await is used to wait for the promise to resolve.
 
 - ### ➡ else { apiError = true; }:
 
- Sets apiError to true if the response was not successful.
+   Sets apiError to true if the response was not successful.
 
 - ### ➡ .catch(() => (apiError = true)):
 
- Catches any errors that occur during the fetch request and sets apiError to true.
+   Catches any errors that occur during the fetch request and sets apiError to true.
 
