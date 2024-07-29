@@ -777,13 +777,42 @@ Specifies the type of request to be made, in this case, a GET request.
 
 - ➡ **success:**
 
-his is a callback function that is executed if the request succeeds.
+This is a callback function that is executed if the request succeeds.
 
 - ➡ **data:**
 
-his parameter will contain the data returned from the server.
+This parameter will contain the data returned from the server.
 
 - ➡ **console.log(data):**
 
 Logs the returned data to the console.
 
+
+
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * fetch Request :-
+
+he fetch API is a modern way to make HTTP requests in JavaScript. It's a promise-based API that provides a more powerful and flexible feature set compared to the older XMLHttpRequest API. 
+
+**Syntax:**
+```javascript
+     fetch("http://localhost:5050/api/product/" + idOfProduct, {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then(async (response) => {
+      if (response.ok) {
+        apiError = false;
+        result = await response.json();
+      } else {
+        apiError = true;
+      }
+    })
+    .catch(() => (apiError = true));
+};
+
+```
