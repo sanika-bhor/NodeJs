@@ -736,3 +736,26 @@ jwt.decode(token)
 const decoded = jwt.decode(token);
 res.send(decoded);
 ```
+
+
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * AJAX :-
+
+AJAX stands for Asynchronous JavaScript and XML. It's a technique for creating fast and dynamic web pages by allowing web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes. This means that parts of a web page can be updated without reloading the entire page.
+
+**Syntax:**
+```javascript
+    $.ajax({
+        dataType: "json",
+        url: url,
+        type: "GET",
+        success: (data) =>
+          {
+              console.log(data);
+              let productList = document.getElementById("mylist");
+          },
+         });
+```
