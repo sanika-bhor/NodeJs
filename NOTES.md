@@ -290,23 +290,23 @@ In Express.js, routing methods correspond to HTTP request methods (such as GET, 
 The body-parser module in Express.js is a middleware that extracts the entire body portion of an incoming request stream and exposes it on req.body. This module is essential for handling POST, PUT, DELETE, and PATCH requests where data is sent to the server from a form or an API client.
 
 - ### Installation:
-```javascript
-npm install body-parser
-```
+    ```javascript
+    npm install body-parser
+    ```
 - ### Integration:
-```javascript
-const bodyParser = require('body-parser');
-```
+    ```javascript
+     const bodyParser = require('body-parser');
+    ```
 - ### Middleware Setup:
-```javascript
-app.use(bodyParser.json());
-```
-bodyParser.json() parses JSON-encoded bodies and populates req.body with the parsed JSON object.
+   ```javascript
+     app.use(bodyParser.json());
+   ```
+    bodyParser.json() parses JSON-encoded bodies and populates req.body with the parsed JSON object.
 
-```javascript
-app.use(bodyParser.urlencoded({ extended: true }));
-```
-bodyParser.urlencoded() parses URL-encoded bodies (typically sent by HTML forms) and populates req.body with the parsed data. The extended: true option allows parsing of rich objects and arrays.
+    ```javascript
+    app.use(bodyParser.urlencoded({ extended: true }));
+   ```
+  bodyParser.urlencoded() parses URL-encoded bodies (typically sent by HTML forms) and populates req.body with the parsed data. The extended: true option allows parsing of rich objects and arrays.
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -314,29 +314,28 @@ bodyParser.urlencoded() parses URL-encoded bodies (typically sent by HTML forms)
 In Node.js, the EventEmitter is a class from the events module that provides a way to handle asynchronous events. It allows you to define and listen to custom events, making it a powerful tool for creating event-driven applications.
 
 - ### ➡ events Module:
- ```javascript
-var eventModule = require("events");
-```
-The events module in Node.js is a core module that provides a way to work with events, including creating, emitting, and handling events in an asynchronous and event-driven manner.
+   ```javascript
+  var eventModule = require("events");
+  ```
+   The events module in Node.js is a core module that provides a way to work with events, including creating, emitting, and handling events in an asynchronous and event-driven manner.
 
 - ### ➡ EventEmitter Class:
-```javascript
-var emitter= new eventModule.EventEmitter();
-```
-The EventEmitter class allows you to create, fire, and listen to custom events.
+  ```javascript
+  var emitter= new eventModule.EventEmitter();
+  ```
+  The EventEmitter class allows you to create, fire, and listen to custom events.
 
 - ### ➡ addListener() method::
-```javascript
-emitter.addListener(event, listener);
-```
- It is used to register an event listener for a specific event. When the event is emitted, all registered listeners for that event will be called in the order they were registered.
+   ```javascript
+   emitter.addListener(event, listener);
+   ```
+    It is used to register an event listener for a specific event. When the event is emitted, all registered listeners for that event will be called in the order they were registered.
 
 - ### ➡ emit() method::
-```javascript
-emitter.emit(eventName);
-
-```
-The emit method in the EventEmitter class is used to trigger an event. When an event is emitted, all listeners registered for that event are called synchronously, in the order they were registered.
+   ```javascript
+   emitter.emit(eventName); 
+   ```
+    The emit method in the EventEmitter class is used to trigger an event. When an event is emitted, all listeners registered for that event are called synchronously, in the order they were registered.
 
 
 <!------------------------------------------------------------->
@@ -345,33 +344,33 @@ The emit method in the EventEmitter class is used to trigger an event. When an e
  ### ➡ importing module
 - ### mysql module:
   
-The mysql module in Node.js is used to interact with MySQL databases. It provides a simple and powerful way to execute SQL queries and manage database connections.
+   The mysql module in Node.js is used to interact with MySQL databases. It provides a simple and powerful way to execute SQL queries and manage database connections.
 
-**installation:**
-```javascript
-npm install mysql
-```
+   **installation:**
+  ```javascript
+  npm install mysql
+  ```
 - ### mysql2 module:
   
-The mysql2 module in Node.js is a modern, optimized version of the mysql module. It provides enhanced performance and supports additional features such as prepared statements and promise-based APIs.
+   The mysql2 module in Node.js is a modern, optimized version of the mysql module. It provides enhanced performance and supports additional features such as prepared statements and promise-based APIs.
 
-**installation:**
-```javascript
-npm install mysql2
-```
+  **installation:**
+  ```javascript
+  npm install mysql2
+  ```
 
 ### ➡ Configuring the Database Connection
-**syntax:**
-```javascript
-var conUrl = {
-    host: 'localhost',
-    user: 'root',
-    password: 'password',
-    database: 'college'
-};
+   **syntax:**
+  ```javascript
+   var conUrl = {
+     host: 'localhost',
+     user: 'root',
+     password: 'password',
+     database: 'college'
+ };
 
 ```
-Configuring the database connection is a crucial step in setting up your Node.js application to interact with a MySQL database. This configuration involves specifying details like the database host, user credentials, and the specific database you want to access.
+   Configuring the database connection is a crucial step in setting up your Node.js application to interact with a MySQL database. This configuration involves specifying details like the database host, user credentials, and the specific database you want to access.
 
 
 ### ➡ Creating the Database Connection
@@ -433,21 +432,22 @@ project
 ```
 
 ### ➡ Model:
-In the MVC (Model-View-Controller) architecture, the Model is responsible for managing the data, logic, and rules of the application. It directly interacts with the database or any other data storage system, and it represents the data that is being manipulated and displayed in the application.
+
+   In the MVC (Model-View-Controller) architecture, the Model is responsible for managing the data, logic, and rules of the application. It directly interacts with the database or any other data storage system, and it represents the data that is being manipulated and displayed in the application.
 
 ### ➡ View:
-In the MVC (Model-View-Controller) architecture, the View is responsible for presenting data to the user and handling user interactions. It is the user interface of the application, displaying data from the Model and sending user commands to the Controller.
+   In the MVC (Model-View-Controller) architecture, the View is responsible for presenting data to the user and handling user interactions. It is the user interface of the application, displaying data from the Model and sending user commands to the Controller.
 
 ### ➡ Controller:
-In the MVC (Model-View-Controller) architecture, the Controller acts as an intermediary between the Model and the View. It handles user input, processes it, and sends commands to the Model to update the data. The Controller also decides which View to display based on the user actions and the state of the application.
+   In the MVC (Model-View-Controller) architecture, the Controller acts as an intermediary between the Model and the View. It handles user input, processes it, and sends commands to the Model to update the data. The Controller also decides which View to display based on the user actions and the state of the application.
 
 ###  ➡ Router:
-In the MVC (Model-View-Controller) architecture, the Router is responsible for mapping URLs to the appropriate controller actions. It defines the endpoints and specifies how the application should respond to various HTTP requests.
+   In the MVC (Model-View-Controller) architecture, the Router is responsible for mapping URLs to the appropriate controller actions. It defines the endpoints and specifies how the application should respond to various HTTP requests.
 
-**syntax:**
-```javascript
-app.route('/task').get(userController.getAll)
-```
+   **syntax:**
+   ```javascript
+     app.route('/task').get(userController.getAll)
+   ```
 
 
 <!------------------------------------------------------------->
