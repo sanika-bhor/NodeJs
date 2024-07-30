@@ -795,7 +795,7 @@ AJAX stands for Asynchronous JavaScript and XML. It's a technique for creating f
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ## * fetch Request :-
 
-he fetch API is a modern way to make HTTP requests in JavaScript. It's a promise-based API that provides a more powerful and flexible feature set compared to the older XMLHttpRequest API. 
+The fetch API is a modern way to make HTTP requests in JavaScript. It's a promise-based API that provides a more powerful and flexible feature set compared to the older XMLHttpRequest API. 
 
 **Syntax:**
 ```javascript
@@ -848,4 +848,15 @@ he fetch API is a modern way to make HTTP requests in JavaScript. It's a promise
 - ### ➡ .catch(() => (apiError = true)):
 
    Catches any errors that occur during the fetch request and sets apiError to true.
+
+
+
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * fetch Request :-
+
+The cors module is a Node.js package for providing a Connect/Express middleware that can be used to enable Cross-Origin Resource Sharing (CORS) with various options. CORS is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the resource originated.
+
 
