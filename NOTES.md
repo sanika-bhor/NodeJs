@@ -110,21 +110,21 @@ performTask((err, data) => {
 ### Working with JSON:
 - ➡ **JSON.parse()**:
 
-JSON.parse() is a method in NodeJs that converts a JSON string into a JavaScript object. This is useful when you receive data as a JSON string and need to work with it as a JavaScript object.
+    JSON.parse() is a method in NodeJs that converts a JSON string into a JavaScript object. This is useful when you receive data as a JSON string and need to work with it as a JavaScript object.
 
-**Snytax**:
-```javascript
-JSON.parse(data.toString());
-```
+   **Snytax**:
+  ```javascript
+  JSON.parse(data.toString());
+   ```
 
 - ➡ **JSON.stringify()**:
 
-JSON.stringify() is a method in nodeJs that converts a JavaScript object or value to a JSON string. This is useful when you need to send data to a server or save it in a file in JSON format.
+    JSON.stringify() is a method in nodeJs that converts a JavaScript object or value to a JSON string. This is useful when you need to send data to a server or save it in a file in JSON format.
 
-**Snytax**:
-```javascript
-JSON.stringify(value);
-```
+    **Snytax**:
+   ```javascript
+  JSON.stringify(value);
+  ```
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ## * read():-
@@ -168,29 +168,27 @@ const fs = require('fs');
 ### File Operation:
 - ➡ **Reading Files**:
   
-The 'readFile()' method reads a file asynchronously.<br>The 'readFileSync()' method reads a file synchronously.
+   The 'readFile()' method reads a file asynchronously.<br>The 'readFileSync()' method reads a file synchronously.
 
-**Snytax**:
-```javascript
-fs.readFile('fileName, (err, data) => {
+   **Snytax**:
+   ```javascript
+  fs.readFile('fileName, (err, data) => {
   if (err) throw err;
   console.log(data);
-});
-
-```
+  });
+  ```
 
 - ➡ **Writing Files**:
   
-The 'writeFile' method writes data to a file asynchronously.<brThe 'writeFileSync' method writes data to a file synchronously.
+   The 'writeFile' method writes data to a file asynchronously.<brThe 'writeFileSync' method writes data to a file synchronously.
 
-**Snytax**:
-```javascript
-fs.writeFile(fileName, dataToBeWrite, (err) => {
+   **Snytax**:
+    ```javascript
+  fs.writeFile(fileName, dataToBeWrite, (err) => {
   if (err) throw err;
   console.log('File has been saved!');
-});
-
-```
+  });
+  ```
  <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -243,51 +241,48 @@ In Express.js, routing methods correspond to HTTP request methods (such as GET, 
 
 -  #### ➡ **app.get()**:-
 
-The app.get() method in Express.js is used to define a route handler that responds to HTTP GET requests at a specific route or endpoint on the server. It is one of the most commonly used routing methods in Express for handling GET requests.
+    The app.get() method in Express.js is used to define a route handler that responds to HTTP GET requests at a specific route or endpoint on the server. It is one of the most commonly used routing methods in Express for handling GET requests.
 
-**syntax**:
-```javascript
-app.get(path, (req,res)=>{
+   **syntax**:
+    ```javascript
+   app.get(path, (req,res)=>{
     //handling get request
-});
-
-```
+   });
+    ```
 
 - #### ➡ **app.post()**:-
 
-The app.post() method in Express.js is used to define a route handler that responds to HTTP POST requests at a specific route or endpoint on the server. It allows your Express application to handle incoming data and perform operations based on that data when clients submit forms or send data via POST requests.
+   The app.post() method in Express.js is used to define a route handler that responds to HTTP POST requests at a specific route or endpoint on the server. It allows your Express application to handle incoming data and perform operations based on that data when clients submit forms or send data via POST requests.
 
-**syntax**:
-```javascript
-app.post(path, (req,res)=>{
+  **syntax**:
+  ```javascript
+  app.post(path, (req,res)=>{
     //handling post request
-});
-
-```
+  });
+  ```
 
 - #### ➡ **app.put()**:-
 
-The app.put() method in Express.js is used to define a route handler that responds to HTTP PUT requests at a specific route or endpoint on the server. It allows your Express application to update resources on the server based on data sent by clients using the HTTP PUT method.
+    The app.put() method in Express.js is used to define a route handler that responds to HTTP PUT requests at a specific route or endpoint on the server. It allows your Express application to update resources on the server based on data sent by clients using the HTTP PUT method.
 
-**syntax**:
-```javascript
-app.put(path, (req,res)=>{
+    **syntax**:
+  ```javascript
+  app.put(path, (req,res)=>{
     //handling post request
-});
+  });
 
-```
+   ```
 
 - #### ➡ **app.delete()**:-
 
-The app.delete() method in Express.js is used to define a route handler that responds to HTTP DELETE requests at a specific route or endpoint on the server. It allows your Express application to delete resources on the server based on data sent by clients using the HTTP DELETE method.
+   The app.delete() method in Express.js is used to define a route handler that responds to HTTP DELETE requests at a specific route or endpoint on the server. It allows your Express application to delete resources on the server based on data sent by clients using the HTTP DELETE method.
 
-**syntax**:
-```javascript
-app.delete(path, (req,res)=>{
+  **syntax**:
+  ```javascript
+  app.delete(path, (req,res)=>{
     //handling post request
-});
-
-```
+  });
+  ```
 
  <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -319,7 +314,7 @@ bodyParser.urlencoded() parses URL-encoded bodies (typically sent by HTML forms)
 In Node.js, the EventEmitter is a class from the events module that provides a way to handle asynchronous events. It allows you to define and listen to custom events, making it a powerful tool for creating event-driven applications.
 
 - ### ➡ events Module:
-```javascript
+ ```javascript
 var eventModule = require("events");
 ```
 The events module in Node.js is a core module that provides a way to work with events, including creating, emitting, and handling events in an asynchronous and event-driven manner.
