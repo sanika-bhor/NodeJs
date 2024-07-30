@@ -868,3 +868,31 @@ npm install cors
 ```javascript
 const cors = require('cors');
  ```
+
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * Promises :-
+
+Promises in JavaScript are used to handle asynchronous operations. They represent a value that may be available now, or in the future, or never. Promises provide a way to chain asynchronous operations and handle their success or failure in a clean and manageable way.
+
+**Installation:**
+```javascript
+const myPromise = new Promise((resolve, reject) => {
+  // Asynchronous operation
+  let success = true; // Simulating success or failure
+  if (success) {
+    resolve("Operation was successful");
+  } else {
+    reject("Operation failed");
+  }
+});
+
+ ```
+
+### reject:
+The reject function in a JavaScript promise is used to signal that the promise has failed or encountered an error.
+
+### resolve:
+the resolve function is used to mark a promise as successfully completed. 
