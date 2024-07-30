@@ -859,4 +859,12 @@ The fetch API is a modern way to make HTTP requests in JavaScript. It's a promis
 
 The cors module is a Node.js package for providing a Connect/Express middleware that can be used to enable Cross-Origin Resource Sharing (CORS) with various options. CORS is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the resource originated.
 
+**Installation:**
+```javascript
+npm install cors
+ ```
 
+**Syntax:**
+```javascript
+const cors = require('cors');
+ ```
