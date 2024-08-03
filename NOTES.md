@@ -921,7 +921,7 @@ Object-Oriented Programming (OOP) is a programming paradigm based on the concept
 
   <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-## *Classes and Objects :-
+## * Classes and Objects :-
 
 Node.js, being a JavaScript runtime, supports the creation and use of classes and objects as defined in the ECMAScript 2015 (ES6) standard. Classes in JavaScript provide a way to define reusable blueprints for creating objects with shared behavior and state.
 
@@ -948,27 +948,27 @@ person1.displayInfo(); // Output: Name: Sanika, Age: 19
 
   <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-## *Encapsulation :-
+## * Encapsulation :-
 
 Encapsulation is a fundamental concept in object-oriented programming that helps protect the internal state of an object and restricts access to its data and methods. In JavaScript, encapsulation can be achieved using classes, constructor functions, and closures.
 
   <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-## *Inheritance :-
+## * Inheritance :-
 
 Inheritance is a fundamental concept in object-oriented programming that allows one class to inherit properties and methods from another class. In JavaScript, inheritance can be achieved using classes and the extends keyword.
 
 
   <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-## *Polymorphism :-
+## * Polymorphism :-
 
 Polymorphism is a core concept in object-oriented programming (OOP) that allows objects of different classes to be treated as objects of a common superclass. It provides a way to perform a single action in different forms, enabling methods to operate on objects of different types.
 
 
   <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-## *Abstraction :-
+## * Abstraction :-
 
 Abstraction is a fundamental principle in object-oriented programming (OOP) that allows you to hide the implementation details of a class and expose only the necessary parts to the user. It helps in reducing complexity and increasing efficiency by allowing the programmer to focus on interactions at a higher level without worrying about the internal details.
 
