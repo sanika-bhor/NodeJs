@@ -891,3 +891,88 @@ The reject function in a JavaScript promise is used to signal that the promise h
 
 ### resolve:
 the resolve function is used to mark a promise as successfully completed. 
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * Import Statement :-
+
+In Node.js, the import statement is used to bring in modules, functions, or objects from other files or packages.
+Note:-
+- Adding "type": "module" to your package.json file.
+
+**Installation:**
+```javascript
+// Importing a built-in module (e.g., 'fs' for file system operations)
+import fs from 'fs';
+ ```
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * Object Oriented programming :-
+
+Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects", which are instances of classes. OOP is widely used in software development because it helps in organizing complex programs, making code reusable, and modeling real-world scenarios.
+
+
+### Key Concepts of OOP:
+- ➡ **Classes and Objects**
+- ➡ **Encapsulation**
+- ➡ **Inheritance**
+- ➡ **Polymorphism**
+- ➡ **Abstraction**
+
+  <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## *Classes and Objects :-
+
+Node.js, being a JavaScript runtime, supports the creation and use of classes and objects as defined in the ECMAScript 2015 (ES6) standard. Classes in JavaScript provide a way to define reusable blueprints for creating objects with shared behavior and state.
+
+**Installation:**
+```javascript
+class Person {
+  // Constructor to initialize properties
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  // Method to display person's details
+  displayInfo() {
+    console.log(`Name: ${this.name}, Age: ${this.age}`);
+  }
+}
+
+// Creating an instance of the Person class
+const person1 = new Person('Sanika', 19);
+person1.displayInfo(); // Output: Name: Sanika, Age: 19
+
+ ```
+
+  <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## *Encapsulation :-
+
+Encapsulation is a fundamental concept in object-oriented programming that helps protect the internal state of an object and restricts access to its data and methods. In JavaScript, encapsulation can be achieved using classes, constructor functions, and closures.
+
+  <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## *Inheritance :-
+
+Inheritance is a fundamental concept in object-oriented programming that allows one class to inherit properties and methods from another class. In JavaScript, inheritance can be achieved using classes and the extends keyword.
+
+
+  <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## *Polymorphism :-
+
+Polymorphism is a core concept in object-oriented programming (OOP) that allows objects of different classes to be treated as objects of a common superclass. It provides a way to perform a single action in different forms, enabling methods to operate on objects of different types.
+
+
+  <!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## *Abstraction :-
+
+Abstraction is a fundamental principle in object-oriented programming (OOP) that allows you to hide the implementation details of a class and expose only the necessary parts to the user. It helps in reducing complexity and increasing efficiency by allowing the programmer to focus on interactions at a higher level without worrying about the internal details.
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
