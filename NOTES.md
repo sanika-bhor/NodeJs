@@ -65,6 +65,19 @@ Objects of a superclass should be replaceable with objects of a subclass without
 
  A subclass should behave in such a way that it can replace its superclass without causing errors.
 
+### 4. I:Interface Segregation Principle (ISP):
+A client should not be forced to implement interfaces it doesn't use. Instead of one fat interface, many small, specific interfaces are preferable.
+
+**Example:**
+
+If you have a large interface with many methods, split it into smaller, more specific interfaces that only include methods relevant to the client.
+
+### 5. D: Dependency Inversion Principle (DIP):
+High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g., interfaces). Also, abstractions should not depend on details. Details should depend on abstractions.
+
+**Example:**
+
+ Instead of a high-level class directly depending on a low-level class, both should depend on an abstraction, like an interface or a service.
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
