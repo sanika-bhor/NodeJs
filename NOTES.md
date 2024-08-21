@@ -40,6 +40,17 @@ We'll build a basic Node.js application using the Express framework to demonstra
 - Project Structure
 - Basic Server Setup
 - Simple Route Handlers
+
+### ➡  SOLID Principal:
+The SOLID principles are a set of design guidelines that help developers create software that is more maintainable, scalable, and easier to understand. These principles can be applied to Node.js development to create robust applications. Here's a simple explanation of each principle with examples:
+
+### S: Single Responsibility Principle (SRP):
+A class or module should have one, and only one, reason to change, meaning it should have only one job or responsibility.
+
+#### Example:
+Suppose you have a class that handles both database operations and email notifications. According to SRP, you should split this class into two separate classes: one for database operations and another for sending emails.
+
+
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
