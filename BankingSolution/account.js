@@ -13,7 +13,7 @@ exports.Account=function(initialBalance)
 {
     var balance=initialBalance;
     var monitor=function()
-    {
+    {//10000
         if (balance <= 5000) {
           emitter.emit("underBalance");
         } else if (balance >= 250000) {

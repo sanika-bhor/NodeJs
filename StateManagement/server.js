@@ -89,23 +89,6 @@ app.get('/api/removeFromCart/:id',(req,res)=>{
 
 
 
-app.get("/api/removeFromCart/:id", (req, res) => {
-  var id = req.params.id;
-
-  if (req.session.cart) 
-    {
-    // get the product detail by itd id to remove from cart
-    req.session.cart = req.session.cart.filter((product) => product.id !== id);
-    res.send("<h1>your product removed from cart</h1>");
-  } 
-  else 
-  {
-    res.send("<h1>cart does not contain this product</h1>");
-  }
-});
-
-
-
 app.get("/api/checkout", (req, res) => {
   req.session.destroy((err)=>{
     if(err)

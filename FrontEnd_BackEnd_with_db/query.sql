@@ -10,12 +10,21 @@ insert into products (productName, price) values('watch',5000);
 select * from products;
 
 
+-- create table user such that it can store users details
+create table users (
+id int auto_increment primary key,
+username varchar(50) not null unique,
+password varchar(255) not null,
+email varchar(100) not null unique,
+address varchar(255)
+);
+
 create table credentials(credentialId int not null auto_increment primary key,email varchar(30),password varchar(8),name varchar(30),location varchar(20),age int);
 insert into credentials (email,password,name,location,age) values('bhorsanika0239@gmail.com','sanika','sanika bhor','machar',19);
 insert into credentials (email,password,name,location,age) values('sumitbhor@gmail.com','sumit','sumit bhor','manchar',18);
 select * from credentials;
 
-create table orders(id int not null auto_increment primary key,date date,total int,status varchar(15));
+create table orders (id int not null auto_increment primary key,date date,total int,status varchar(15));
 insert into orders (date,total,status) values('2024-4-7',2500,'intransmit');
 insert into orders (date,total,status) values('2024-7-4',2500,'processed');
 insert into orders (date,total,status) values('2024-2-14',8900,'processed');
