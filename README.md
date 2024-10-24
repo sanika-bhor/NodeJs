@@ -5,7 +5,7 @@ My repository includes various projects and practice exercises that showcase my 
 
 <hr>
 
-# Node.js Projects 🚀
+# <p align="center">Node.js Projects 🚀</p>
 
 Welcome to my Node.js repository! Here, you'll find a collection of projects and exercises that highlight my journey in learning Node.js. Node.js is a powerful JavaScript runtime built on Chrome's V8 engine, allowing for fast and scalable network applications. I'm exploring various aspects of Node.js, including:
 
